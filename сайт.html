@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад занять та реєстрація</title>
+    <style>
+        /* Ваші стилі тут */
+		body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-color: #FFC0CB;
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+		
+       .header {
+            text-align: left;
+            margin-top: 20px;
+            font-family: 'Garamond', sans-serif;
+            font-size: 24px;
+        }
+
+        .logo {
+            float: left;
+            margin-right: 5px;
+            margin-top: 0px;
+        } 
+		
+		.registration {
+            line-height: 1;
+            text-align: left;
+            float: right;
+            margin-right: 10px;
+            margin-top: -50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            width: 200px;
+            height: auto;
+        }
+
+       table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="C:\Users\Дом\OneDrive\Зображення\A.png" alt="Логотип установи" width="187.5" height="187.5">
+    </div>
+
+    <div class="header">
+        <h1>Timetable </h1>
+    </div>
+
+    <div class="registration">
+        <!-- Форма для реєстрації -->
+        <h2>Registration</h2>
+        <form action="#" method="post" id="registrationForm">
+            <!-- Поля для введення інформації про користувача (ім'я, прізвище, пошта, пароль і підтвердження пароля) -->
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm_password">confirm_password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+            <!-- Повідомлення про помилку (якщо паролі не співпадають) -->
+            <span id="passwordError" style="color: red;"></span><br>
+
+            <!-- Кнопка "Зареєструватися" -->
+            <input type="submit" value="Зареєструватися">
+        </form>
+
+        <!-- Форма для входу -->
+        <h2>Sing in</h2>
+        <form action="#" method="post" id="loginForm">
+            <!-- Поля для введення інформації для входу (електронна пошта і пароль) -->
+            <label for="login_email">Email:</label>
+            <input type="email" id="login_email" name="login_email" required><br><br>
+
+            <label for="login_password">Password:</label>
+            <input type="password" id="login_password" name="login_password" required><br><br>
+
+            <!-- Кнопка "Увійти" -->
+            <input type="submit" value="Увійти">
+        </form>
+    </div>
+<table>
+  <!-- Заголовок таблиці -->
+  <tr>
+    <th>Day/Period</th>
+    <th>I<br>9:30-10:20</th>
+    <th>II<br>10:20-11:10</th>
+    <th>III<br>11:10-12:00</th>
+    <th>12:00-12:40</th>
+    <th>IV<br>12:40-1:30</th>
+    <th>V<br>1:30-2:20</th>
+    <th>VI<br>2:20-3:10</th>
+    <th>VII<br>3:10-4:00</th>
+  </tr>
+  <!-- Рядок 1 -->
+  <tr>
+    <td><b>Monday</b></td>
+    <td>Eng</td>
+    <td>Mat</td>
+    <td>Che</td>
+    <td rowspan="6"><h2>L<br>U<br>N<br>C<br>H</h2></td>
+    <td colspan="3">LAB</td>
+    <td>Phy</td>
+  </tr>
+  <!-- Рядок 2 -->
+  <tr>
+    <td><b>Tuesday</b></td>
+    <td colspan="3">LAB</td>
+    <td>Eng</td>
+    <td>Che</td>
+    <td>Mat</td>
+    <td>SPORTS</td>
+  </tr>
+  <!-- Рядок 3 -->
+  <tr>
+    <td><b>Wednesday</b></td>
+    <td>Mat</td>
+    <td>phy</td>
+    <td>Eng</td>
+    <td>Che</td>
+    <td colspan="3">LIBRARY</td>
+  </tr>
+  <!-- Рядок 4 -->
+  <tr>
+    <td><b>Thursday</b></td>
+    <td>Phy</td>
+    <td>Eng</td>
+    <td>Che</td>
+    <td colspan="3">LAB</td>
+    <td align="center" height="50">Mat</td>
+  </tr>
+  <!-- Рядок 5 -->
+  <tr>
+    <td><b>Friday</b></td>
+    <td>Phy</td>
+    <td colspan="2">LAB</td>
+    <td>Che</td>
+    <td colspan="2">SPORTS</td>
+    <td>Mat</td>
+  </tr>
+</table>
+
+    <script>
+          document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm_password").value;
+
+            if (password !== confirmPassword) {
+                document.getElementById("passwordError").textContent = "Паролі не співпадають.";
+                event.preventDefault(); // Забороняємо відправку форми при помилці
+            } else {
+                document.getElementById("passwordError").textContent = ""; // Сховати повідомлення про помилку
+            }
+        });
+    </script>
+	<footer class="footer">
+    <h1>Contacts</h1>
+    <p>Phone number: 066 051 63 92<br>
+       Insta.: @moi_senko_<br>
+       Email: anhelina14062005@gmail.com</p>
+</footer>
+</body>
+</html>
