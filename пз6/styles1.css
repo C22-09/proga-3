@@ -1,0 +1,80 @@
+/* Стилі для заголовка */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стилі для навігації */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.form {
+    float: right; /* Додаємо float для переміщення секції вправо */
+    margin-left: 0px; /* Встановлюємо відступ від інших елементів зліва */
+	margin-top: -60px;
+    clear: both; /* Забороняємо обтікання секції зліва і праворуч */
+    width: 10%; /* Задаємо ширину секції */
+    margin-bottom: 100px; /* Додаємо відступ знизу */
+}
+
+
+/* Стилі для таблиці - змінюємо відступ зверху */
+.table {
+    padding: 20px;
+    margin-top: 100px; /* Додаємо відступ зверху таблиці */
+}
+
+/* Стилі для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif; /* Змінюємо шрифт таблиці */
+    font-size: 14px; /* Змінюємо розмір тексту в таблиці */
+}
+
+table, th, td {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+/* Стилі для форми */
+form {
+    margin-top: 20px;
+}
+.success-message {
+    font-weight: bold; /* Змінюємо шрифт */
+    color: red; /* Змінюємо колір тексту на червоний */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
