@@ -1,0 +1,40 @@
+.container {
+    display: flex; /* Встановлюємо контейнеру властивість flex */
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px; /* Фіксуємо ширину блоків */
+    height: 100px; /* Фіксуємо висоту блоків */
+    border: default;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+	border-radius: 10px;
+}
+
+.static {
+    background-color: #FFD700;
+}
+
+.relative {
+    background-color: #00BFFF;
+    position: relative;  /* Змінюємо позицію блоку відносно його нормального положення */
+	left: 520px;
+	top: 300px;
+}
+
+.absolute {
+    background-color: #FF6347;
+    position: absolute;  /* Відмічаємо абсолютне позиціонування */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Розміщуємо блок по середині сторінки */
+	z-index: 1;  /* Змінюємо позицію блоку по вісі Z */
+}
+.fixed {
+	position: fixed; /* Відмічаємо фіксоване позиціонування */
+	top: 20px;
+    right: 20px;
+	background-color: #3CB371;
+	z-index: 1; /* Змінюємо позицію блоку по вісі Z */
