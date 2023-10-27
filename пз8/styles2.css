@@ -1,0 +1,115 @@
+ .container {
+    margin-left: 25mm;  /* Лівий внутрішній відступ */
+    margin-right: 25mm; /* Правий внутрішній відступ */
+}
+
+ .h1-nav {
+    font-size: 24px;
+    color: #333;
+    margin-right: 200px;
+}
+
+/* Стилі для горизонтальної панелі навігації */
+.horizontal-nav {
+    background-color: #333;
+    color: white;
+}
+
+.horizontal-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.horizontal-nav li {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.horizontal-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.horizontal-nav a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-separator {
+    border-right: 1px solid white; /* Розділювач */
+}
+
+/* Стилі для вертикальної панелі навігації */
+.vertical-nav {
+    background-color: #333;
+    color: white;
+    width: 200px;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav li {
+    padding: 10px;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.vertical-nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-icon {
+    text-align: center;
+    background-color: #555; /* Колір фону іконки */
+    padding: 10px;
+}
+
+.nav-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.active {
+    background-color: #4CAF50;
+    color: white; /* Додатковий стиль для тексту активного елемента */
+}
+.contacts {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.contacs h2 {
+    font-size: 20px;
+    margin-bottom: 10px; /* Відступ від заголовка до списку контактів */
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts li {
+    margin: 10px 0;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
