@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+<button id="myButton">Натисни мене</button>
+<input type="text" id="myInput" placeholder="Введіть текст" style="margin-left: 10px;">
+
+<script>
+  var buttonElement = document.getElementById('myButton');
+  var inputElement = document.getElementById('myInput');
+
+  function buttonClickHandler() {
+    console.log('Кнопка була натиснута!');
+  }
+
+  function inputKeyDownHandler() {
+    console.log('Клавіша була натиснута!');
+  }
+
+  function inputFocusHandler() {
+    console.log('Елемент отримав фокус!');
+  }
+
+  function inputBlurHandler() {
+    console.log('Елемент втратив фокус!');
+  }
+
+  function documentLoadHandler() {
+    console.log('Документ повністю завантажено!');
+  }
+
+  function elementEventHandler() {
+    console.log('Подія виникла!');
+  }
+
+  function secondEventHandler() {
+    console.log('Це один обробник події!');
+  }
+
+  buttonElement.addEventListener('click', buttonClickHandler);
+  inputElement.addEventListener('keydown', inputKeyDownHandler);
+  inputElement.addEventListener('focus', inputFocusHandler);
+  inputElement.addEventListener('blur', inputBlurHandler);
+  document.addEventListener('DOMContentLoaded', documentLoadHandler);
+
+  // Додаємо два обробники подій для елемента
+  inputElement.addEventListener('click', elementEventHandler);
+  inputElement.addEventListener('click', secondEventHandler);
+</script>
+
+</body>
+</html>

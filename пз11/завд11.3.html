@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Events</title>
+</head>
+<body>
+
+<input type="text" id="focusInput" placeholder="Введіть текст">
+<button id="focusButton">Натисни мене</button>
+
+<script>
+  var inputElement = document.getElementById('focusInput');
+
+  inputElement.addEventListener('focus', function() {
+    console.log('Елемент отримав фокус!');
+  });
+
+  inputElement.addEventListener('blur', function() {
+    console.log('Елемент втратив фокус!');
+  });
+</script>
+
+</body>
+</html>
